@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+  <bean class="com.springcore.collections.Emp" name="emp1" >
+  	<property name="name" value="Hanuman"/>
+    
+    <property name="phones">
+    
+    	<list>
+    		<value>2243434</value>
+    	    <value>24234343</value>
+    	    <value>678799</value>
+    	</list>
+    
+    </property>
+    
+    <property name="address">
+    	<set>
+    		<value>banglore</value>
+    		<value>mumbai</value>
+    		<value>pune</value>
+    	</set>
+    </property>
+    
+    <property name="courses">
+    	<map>
+    		<entry key="java" value="2month" />
+    		<entry key="c++" value="6month"/>
+    	</map>
+    </property> 
+    
+    <property name="props">
+    	<props>
+    	 	<prop key="com.jdbc">jdbcDriver</prop>
+    	 	<prop key="url">jdbc</prop>
+    	 	<prop key="passward">1234</prop>
+    	 	<prop key="nam">root</prop>
+    	</props>
+    
+    </property>
+    
+  </bean>
+ 
+ 
+ 
+ </beans>
